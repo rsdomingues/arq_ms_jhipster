@@ -8,6 +8,7 @@
             "entities": {
                 "main": "Entidades",
                 "version": "Version",
+                "graph" : "Kibana Dashboard",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
