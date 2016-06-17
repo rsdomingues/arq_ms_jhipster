@@ -1,0 +1,13 @@
+version: '2'
+services:
+    webapp-cassandra-migration:
+        container_name: webapp-cassandra-migration
+        environment:
+            - CASSANDRA_CONTACT_POINT=webapp-cassandra
+            - USER=docker-cassandra-migration
+            # - DEBUG_LOG=1 # uncomment to show debug logs durinq the migration process
+        build:
+            context: .
+            dockerfile: cassandra/Cassandra-Migration.Dockerfile
+        volumes:
+            - ../resources/config/cql:/cql:ro

@@ -1,0 +1,24 @@
+{
+    "webappApp": {
+        "version" : {
+            "home": {
+                "title": "Versions",
+                "createLabel": "Criar novo Version",
+                "createOrEditLabel": "Criar ou editar Version",
+                "search": "Pesquisar por Version"
+            },
+            "created": "Um novo Version é criado com o identificador {{ param }}",
+            "updated": "Um Version é atualizado com o identificador {{ param }}",
+            "deleted": "Um Version é deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Version {{ id }}?"
+            },
+            "detail": {
+                "title": "Version"
+            },
+            "name": "Name",
+            "description": "Description",
+            "releaseDate": "Release Date"
+        }
+    }
+}
