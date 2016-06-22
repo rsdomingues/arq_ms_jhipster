@@ -11,16 +11,18 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
-eureka:
-    instance:
-        appname: webapp
-        instanceId: webapp:${spring.application.instance_id:${random.value}}
-
 ribbon:
     eureka:
-        enabled: true
+        enabled: false
 
 zuul:
+    routes:
+        service:
+          path: /service/**
+          url: http://localhost:8081
+        timeseries:
+          path: /timeseries/**
+          url: http://localhost:8082
 
 management:
     context-path: /management

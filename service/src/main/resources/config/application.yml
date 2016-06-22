@@ -11,14 +11,9 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
-eureka:
-    instance:
-        appname: service
-        instanceId: service:${spring.application.instance_id:${random.value}}
-
 ribbon:
     eureka:
-        enabled: true
+        enabled: false
 
 management:
     context-path: /management

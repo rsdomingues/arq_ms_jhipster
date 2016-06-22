@@ -9,7 +9,7 @@ var syncRequest = require('urllib-sync').request;
  * define default values
  */
 program.env = {
-	elastic:"http://localhost:9200/measurement/measurement",
+	elastic:"http://192.168.99.100:9200/measurement/measurement",
 	templateData:{
 		"id":null,
 		"timestamp":"",

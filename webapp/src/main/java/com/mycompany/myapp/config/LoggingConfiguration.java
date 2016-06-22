@@ -25,8 +25,7 @@ public class LoggingConfiguration {
     @Value("${server.port}")
     private String serverPort;
 
-    @Value("${eureka.instance.instanceId}")
-    private String instanceId;
+    private String instanceId = "webapp";
 
     @Inject
     private JHipsterProperties jHipsterProperties;
